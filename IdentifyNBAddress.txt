@@ -1,0 +1,14 @@
+Identification of Network & Broadcast address from given IP
+Ip Add: 192.168.0.3
+CIDR: 25 (Netmask: 255.255.255.1)
+Note: CIDR talks what is the network address and how many hosts it can accomodate
+ 
+				192.	  168. 	    0.	      3		/25
+				11000000: 10101000: 00000000: 00000011
+		For 25:		8		8	8	1
+				11000000: 10101000: 00000000: 0--0000011
+Calculate Network address:	11000000: 10101000: 00000000: 0--0000000 (Put zeros after cidr value from left)
+Ans: 				192.	  168.	    0.	      0
+Calculate Network address:	11000000: 10101000: 00000000: 0--1111111 (Put ones after cidr value from left)
+Ans: 				192.	  168.	    0.        127
+Hosts accomodated: 192.168.0.0 --> 192.168.0.127 ( Except the mentioned, which is 127-2=125)
