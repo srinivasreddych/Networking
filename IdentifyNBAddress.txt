@@ -9,6 +9,6 @@ Note: CIDR talks what is the network address and how many hosts it can accomodat
 				11000000: 10101000: 00000000: 0--0000011
 Calculate Network address:	11000000: 10101000: 00000000: 0--0000000 (Put zeros after cidr value from left)
 Ans: 				192.	  168.	    0.	      0
-Calculate Network address:	11000000: 10101000: 00000000: 0--1111111 (Put ones after cidr value from left)
+Calculate Broadcast address:	11000000: 10101000: 00000000: 0--1111111 (Put ones after cidr value from left)
 Ans: 				192.	  168.	    0.        127
 Hosts accomodated: 192.168.0.0 --> 192.168.0.127 ( Except the mentioned, which is 127-2=125)
